@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端代码规范 | Blesstosam&#39;s blog</title>
+    <meta name="description" content="Blesstosam&#39;s blog">
+    <link rel="icon" href="/github-blog/favicon.ico">
+    
+    <link rel="preload" href="/github-blog/assets/css/0.styles.78aca58c.css" as="style"><link rel="preload" href="/github-blog/assets/js/app.e3b10756.js" as="script"><link rel="preload" href="/github-blog/assets/js/2.1ab0c05b.js" as="script"><link rel="preload" href="/github-blog/assets/js/14.1e637a97.js" as="script"><link rel="prefetch" href="/github-blog/assets/js/10.74514121.js"><link rel="prefetch" href="/github-blog/assets/js/11.65bfad95.js"><link rel="prefetch" href="/github-blog/assets/js/12.c45d2580.js"><link rel="prefetch" href="/github-blog/assets/js/13.da1d7953.js"><link rel="prefetch" href="/github-blog/assets/js/15.91c4ebc1.js"><link rel="prefetch" href="/github-blog/assets/js/16.f8868b19.js"><link rel="prefetch" href="/github-blog/assets/js/17.92f17462.js"><link rel="prefetch" href="/github-blog/assets/js/18.79071b8a.js"><link rel="prefetch" href="/github-blog/assets/js/19.999d499a.js"><link rel="prefetch" href="/github-blog/assets/js/20.335406b8.js"><link rel="prefetch" href="/github-blog/assets/js/21.7e3b8cf1.js"><link rel="prefetch" href="/github-blog/assets/js/22.b1fff7ad.js"><link rel="prefetch" href="/github-blog/assets/js/23.ccb484b8.js"><link rel="prefetch" href="/github-blog/assets/js/3.55e0a87f.js"><link rel="prefetch" href="/github-blog/assets/js/4.0b322df0.js"><link rel="prefetch" href="/github-blog/assets/js/5.816dad81.js"><link rel="prefetch" href="/github-blog/assets/js/6.abd7a974.js"><link rel="prefetch" href="/github-blog/assets/js/7.cb32d52a.js"><link rel="prefetch" href="/github-blog/assets/js/8.55482e5e.js"><link rel="prefetch" href="/github-blog/assets/js/9.fe6ce754.js">
+    <link rel="stylesheet" href="/github-blog/assets/css/0.styles.78aca58c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/github-blog/" class="home-link router-link-active"><!----> <span class="site-name">Blesstosam's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/github-blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/github-blog/blog/" class="nav-link router-link-active">Blog</a></div> <a href="https://github.com/blesstosam/github-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/github-blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/github-blog/blog/" class="nav-link router-link-active">Blog</a></div> <a href="https://github.com/blesstosam/github-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Blog</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/github-blog/blog/" class="sidebar-link">写在前面</a></li><li><a href="/github-blog/blog/async-catch.html" class="sidebar-link">优雅捕获 async 错误</a></li><li><a href="/github-blog/blog/block-chain.html" class="sidebar-link">区块链</a></li><li><a href="/github-blog/blog/business.html" class="sidebar-link">早期创业与技术关系不大</a></li><li><a href="/github-blog/blog/check-list.html" class="sidebar-link">代码审查检查项</a></li><li><a href="/github-blog/blog/code-quality.html" class="sidebar-link">代码质量问题</a></li><li><a href="/github-blog/blog/codelife.html" class="sidebar-link">读codelife有感</a></li><li><a href="/github-blog/blog/front-end-rule.html" class="active sidebar-link">前端代码规范</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/github-blog/blog/good-experience.html" class="sidebar-link">记录好的用户体验</a></li><li><a href="/github-blog/blog/mac-tips.html" class="sidebar-link">Mac Tips</a></li><li><a href="/github-blog/blog/taobao-ten-years.html" class="sidebar-link">读淘宝十年有感</a></li><li><a href="/github-blog/blog/vue-auth.html" class="sidebar-link">Vue权限系统</a></li><li><a href="/github-blog/blog/vue-i18n.html" class="sidebar-link">Vue-i18n 单独使用</a></li><li><a href="/github-blog/blog/vue-ts.html" class="sidebar-link">Vue+ts 实践</a></li><li><a href="/github-blog/blog/write-backend.html" class="sidebar-link">写后台总结</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="前端代码规范"><a href="#前端代码规范" aria-hidden="true" class="header-anchor">#</a> 前端代码规范</h1> <h3 id="js规范"><a href="#js规范" aria-hidden="true" class="header-anchor">#</a> js规范</h3> <ol><li>js, html, css文件命名和文件夹名用小写，多个单词之间用横杠隔开 如</li></ol> <div class="language- extra-class"><pre class="language-text"><code>/user-center/user-center.html    // 表示 user-center 文件夹下的 user-center.html 文件
+/user-center/UserCenter.vue     // .vue 文件还是首字母大写驼峰法
+</code></pre></div><ol start="2"><li>不要使用全局变量，有可能被覆盖</li> <li>定义变量时，尽量放在最前面</li> <li>不要使用 var 定义变量（有变量提升）</li> <li>拼接字符串尽量用模版字符串语法（不容易出错）</li> <li>判断条件用全等</li> <li>所有的变量尽量做到语义化，方法命名用动词，变量命名用名词，并避免单词长度过长</li></ol> <ul><li>标准变量：驼峰法</li> <li>常量：大写，单词中间用下划线</li> <li>dom：小写，单词中间用下划线</li> <li>构造函数或类：首字母大写驼峰法</li> <li>布尔值类型：以is/has/can/should等开头的驼峰法</li> <li>类的成员：公有属性和方法同上，私有属性和方法在前面加下划线</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> realName <span class="token operator">=</span> <span class="token string">'sam'</span><span class="token punctuation">;</span>   <span class="token comment">// 标准变量</span>
+<span class="token keyword">let</span> isLogin <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>   <span class="token comment">// 布尔值类型</span>
+<span class="token keyword">const</span> <span class="token constant">PI</span> <span class="token operator">=</span> <span class="token number">3.14</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> input_dom <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'input'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// dom元素变量</span>
+<span class="token keyword">let</span> <span class="token function-variable function">Person</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> age</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">// 类名答谢</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>name <span class="token operator">=</span> name<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>age <span class="token operator">=</span> age<span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">_test</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>       <span class="token comment">// 私有方法，加下划线</span>
+        <span class="token comment">// do something</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="8"><li>如果if语句中有return，后面不要跟else语句</li> <li>多个if else 应该用switch，逻辑更清晰</li> <li>注释：要重视注释，注释也是代码的一部分，需要和写代码一样去写注释。注释不做硬性规定，遵循不滥用注释，以让别人更容易的读懂代码为目标就行。
+一般以下情况需要写注释</li></ol> <ul><li>公共调用的方法或模块</li> <li>一些比较复杂的方法或语句</li> <li>比较容易混淆的变量</li> <li>正则表达式</li> <li>逻辑比较复杂的地方</li> <li>方法注释参考以下</li></ul> <ol start="11"><li>Prefer early exit</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// bad</span>
+<span class="token keyword">function</span> <span class="token function">someFunction</span><span class="token punctuation">(</span><span class="token parameter">someCondition</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>someCondition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// Do Something</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// good 逻辑更清晰，避免过度else if</span>
+<span class="token keyword">function</span> <span class="token function">someFunction</span><span class="token punctuation">(</span><span class="token parameter">someCondition</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>someCondition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// Do Something</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="12"><li>ajax 错误处理不要漏掉</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">login</span><span class="token punctuation">(</span>param<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>code <span class="token operator">!==</span> <span class="token number">200</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">$alert</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>msg <span class="token operator">||</span> <span class="token string">'some message'</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// do something</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="css-规范"><a href="#css-规范" aria-hidden="true" class="header-anchor">#</a> css 规范</h3> <ol><li>Class或id命名：小写，单词之间用横线隔开 如 input-wrapper</li> <li>属性尽量采用简写方式</li> <li>避免选择器嵌套层级过多，尽量少于3级</li> <li>尽量使用子选择器（&gt;），而不是后代选择器</li> <li>避免为0指定单位</li> <li>避免以下写法</li></ol> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.font18</span> <span class="token punctuation">{</span>
+    <span class="token property">font-size</span><span class="token punctuation">:</span> 18px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.p-0</span> <span class="token punctuation">{</span>
+    <span class="token property">padding</span><span class="token punctuation">:</span> 0 <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="7"><li>不要用float和绝对定位布局（不方便响应式布局），用flex布局（现在主流框架的响应式都是基于flex）</li> <li>media query 代码放到最后，否则很可能不起作用</li></ol> <h3 id="vuejs规范"><a href="#vuejs规范" aria-hidden="true" class="header-anchor">#</a> vueJs规范</h3> <ol><li>v-for渲染列表时加上key（key必须是唯一的），以便维护内部组件及其子树的状态</li></ol> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>todo in todos<span class="token punctuation">&quot;</span></span> <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>todo.id<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    {{ todo.text }}
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ol start="2"><li>不要把v-if和v-for同时用在同一个元素上（会造成重复计算）</li> <li>为组件样式设置作用域（避免样式冲突）</li> <li>在模板中避免复杂的js表达式（没有高亮，代码堆在一起，阅读困难；使模块过重），复杂的表达式应用computed计算属性或者methods替代</li> <li>在必要的地方加上v-cloak，避免数据未渲染而模板已经渲染</li> <li>尽量使用vue提供的指令，避免dom操作，如有需要使用this.$refs</li> <li>指令的缩写应统一(用 : 表示 v-bind: 和用 @ 表示 v-on:) ，应该要么都用要么都不用</li> <li>不允许在组件内部改变props（会造成数据流动混乱）</li> <li>data 方法里不要的变量定义尽量精简；如果是模板里没有使用，不需要在data里定义，可以直接挂在vue实例上，或者写一个局部变量代替</li> <li>不要在data里定义下划线开头的变量</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        _base<span class="token punctuation">:</span> <span class="token string">''</span>  <span class="token comment">// bad</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="10"><li>学会使用计算属性，ex:</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        arr<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>status<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> foo<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">{</span>status<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> foo<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+computed <span class="token punctuation">{</span>
+    <span class="token comment">// 用计算属性代替，而不是每次手动计算一次</span>
+    <span class="token function">activeArr</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>arr<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token parameter">i</span> <span class="token operator">=&gt;</span> i<span class="token punctuation">.</span>status<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="11"><li>组件属性排列顺序（vue+js）</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+    name<span class="token punctuation">:</span> <span class="token string">&quot;component-name&quot;</span><span class="token punctuation">,</span>
+    
+    <span class="token comment">// 模板依赖</span>
+    components<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    directives<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    filters<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    
+    <span class="token comment">// 一系列钩子函数</span>
+    <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    
+    <span class="token comment">// watch</span>
+    <span class="token function">watch</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    
+    <span class="token comment">// data相关</span>
+    <span class="token function">props</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    
+    <span class="token comment">// methods</span>
+    methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><ol start="12"><li>组件属性排列顺序（vue+ts）</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">class</span> <span class="token class-name">HelloWorld</span> <span class="token keyword">extends</span> <span class="token class-name">Vue</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 全局属性定义</span>
+    $util<span class="token punctuation">:</span> any<span class="token punctuation">;</span>
+    
+    <span class="token comment">// 一系列钩子函数</span>
+    <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      
+    <span class="token punctuation">}</span>
+    <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// 路由钩子</span>
+    <span class="token function">beforeRouteEnter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token function">beforeRouteUpdate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    <span class="token function">beforeRouteLeave</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+    
+    <span class="token comment">// watch</span>
+    @<span class="token function">Watch</span><span class="token punctuation">(</span><span class="token string">'msg'</span><span class="token punctuation">)</span>
+    <span class="token function">onChildChanged</span><span class="token punctuation">(</span>val<span class="token punctuation">:</span> string<span class="token punctuation">,</span> oldVal<span class="token punctuation">:</span> string<span class="token punctuation">)</span><span class="token punctuation">:</span> <span class="token keyword">void</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">oldVal: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>oldVal<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> new val: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>val<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    
+    <span class="token comment">// data, computed, props, vuex(state)</span>
+    name<span class="token punctuation">:</span> string <span class="token operator">=</span> <span class="token string">'local name'</span><span class="token punctuation">;</span>
+    <span class="token keyword">get</span> <span class="token function">computedName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> string <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">'hello '</span> <span class="token operator">+</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    @<span class="token function">Prop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> msg<span class="token operator">!</span><span class="token punctuation">:</span> string<span class="token punctuation">;</span>
+    @<span class="token function">State</span><span class="token punctuation">(</span><span class="token string">'isShowLoading'</span><span class="token punctuation">)</span> isShowLoading<span class="token operator">!</span><span class="token punctuation">:</span> boolean<span class="token punctuation">;</span>
+    @<span class="token function">Getter</span><span class="token punctuation">(</span><span class="token string">'username'</span><span class="token punctuation">)</span> username<span class="token operator">!</span><span class="token punctuation">:</span> string<span class="token punctuation">;</span>
+    
+    <span class="token comment">// methods, $emit, vuex(mutaions, actions )</span>
+    <span class="token function">toAbout</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token string">'/about'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    @<span class="token function">Emit</span><span class="token punctuation">(</span><span class="token string">'changeMsg'</span><span class="token punctuation">)</span>
+    <span class="token function">handleEmit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span> string <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="vuejs组件设计规范"><a href="#vuejs组件设计规范" aria-hidden="true" class="header-anchor">#</a> vueJs组件设计规范</h3> <ol><li>一个组件应该只做一件事，如果逻辑过多建议拆分组件</li> <li>组件的data必须为一个函数（拷贝一个对象，避免多处使用相同组件时数据共享）</li> <li>组件命名：遵循W3C规范中的自定义组件名（字母全小写且必须包含一个连字符），避免和当前或者以后的HTML元素相冲突；
+基础组件（也就是展示类的、无逻辑的或无状态的组件），应该以一个特定的前缀开头，比如el, mt；（避免出现my-header, his-header这种情况）</li></ol> <div class="language- extra-class"><pre class="language-text"><code>&lt;el-header&gt;&lt;/el-header&gt;
+&lt;el-footer&gt;&lt;/el-footer&gt;
+</code></pre></div><ol start="4"><li>Props验证，要给定其数据类型type，其他验证根据需求</li> <li>Props尽量使用js原始数据类型（字符串、数字、布尔值），避免复杂的对象</li> <li>不允许在组件内部改变props，以免造成数据流动难以理解；如果有需求要改变props，可以在组件内部用一个data属性或者computed属性接收，注意如果传递的是一个数组或者对象，需要深拷贝改数组或对象</li> <li>根据业务严格划分data（内部状态）和props（外部状态），如果一个状态完全是由组件内部的逻辑来决定的，应该使用data，如果一个状态是受外部影响的，应该使用props</li> <li>当需要操作组件dom的时候，推荐用this.$refs 而不是用jquery</li> <li>在.vue文件里面，组件的style应加上scope，避免样式冲突</li> <li>组件应写详细注释，特别是数据的定义流向，以便于其他同事理解代码</li></ol> <h3 id="ts规范"><a href="#ts规范" aria-hidden="true" class="header-anchor">#</a> ts规范</h3> <hr> <h3 id="问题"><a href="#问题" aria-hidden="true" class="header-anchor">#</a> 问题</h3> <ul><li>大家会写大量重复的代码，不管是js还是css，以后碰到两处以上会调用的代码，都要封装起来</li> <li>变量命名不按照规范，并且不注意语义化。代码不仅仅是写给计算机执行的，同时是写给人看的。好的代码，一看变量，就大概知道这个变量是干嘛的，或者方法是干什么的，而不好的变量命名会让程序出现歧义</li> <li>写代码不注意代码量，一个单文件组件能写到几千行，方法的行数也要注意。这里建议：单文件组件行数不大于1000，超出应该要拆分出来；方法行数不能超出100行，超出拆分</li> <li>代码风格检查：代码规范 + eslint + prettier</li> <li>每个人同时维护开发多个项目的开发方式，这样对代码质量和代码可维护性有更高的要求，因为你写的代码不只是你一个人看，也要让别人看懂</li> <li>不要滥用ui框架提供的栅格布局，大的布局可以用栅格，小的方块布局用flex布局</li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/blesstosam/github-blog/edit/master/docs/blog/front-end-rule.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">9/13/2019, 8:21:52 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/github-blog/blog/codelife.html" class="prev">
+          读codelife有感
+        </a></span> <span class="next"><a href="/github-blog/blog/good-experience.html">
+          记录好的用户体验
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/github-blog/assets/js/app.e3b10756.js" defer></script><script src="/github-blog/assets/js/2.1ab0c05b.js" defer></script><script src="/github-blog/assets/js/14.1e637a97.js" defer></script>
+  </body>
+</html>

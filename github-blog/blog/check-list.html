@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>代码审查检查项 | Blesstosam&#39;s blog</title>
+    <meta name="description" content="Blesstosam&#39;s blog">
+    <link rel="icon" href="/github-blog/favicon.ico">
+    
+    <link rel="preload" href="/github-blog/assets/css/0.styles.78aca58c.css" as="style"><link rel="preload" href="/github-blog/assets/js/app.e3b10756.js" as="script"><link rel="preload" href="/github-blog/assets/js/2.1ab0c05b.js" as="script"><link rel="preload" href="/github-blog/assets/js/11.65bfad95.js" as="script"><link rel="prefetch" href="/github-blog/assets/js/10.74514121.js"><link rel="prefetch" href="/github-blog/assets/js/12.c45d2580.js"><link rel="prefetch" href="/github-blog/assets/js/13.da1d7953.js"><link rel="prefetch" href="/github-blog/assets/js/14.1e637a97.js"><link rel="prefetch" href="/github-blog/assets/js/15.91c4ebc1.js"><link rel="prefetch" href="/github-blog/assets/js/16.f8868b19.js"><link rel="prefetch" href="/github-blog/assets/js/17.92f17462.js"><link rel="prefetch" href="/github-blog/assets/js/18.79071b8a.js"><link rel="prefetch" href="/github-blog/assets/js/19.999d499a.js"><link rel="prefetch" href="/github-blog/assets/js/20.335406b8.js"><link rel="prefetch" href="/github-blog/assets/js/21.7e3b8cf1.js"><link rel="prefetch" href="/github-blog/assets/js/22.b1fff7ad.js"><link rel="prefetch" href="/github-blog/assets/js/23.ccb484b8.js"><link rel="prefetch" href="/github-blog/assets/js/3.55e0a87f.js"><link rel="prefetch" href="/github-blog/assets/js/4.0b322df0.js"><link rel="prefetch" href="/github-blog/assets/js/5.816dad81.js"><link rel="prefetch" href="/github-blog/assets/js/6.abd7a974.js"><link rel="prefetch" href="/github-blog/assets/js/7.cb32d52a.js"><link rel="prefetch" href="/github-blog/assets/js/8.55482e5e.js"><link rel="prefetch" href="/github-blog/assets/js/9.fe6ce754.js">
+    <link rel="stylesheet" href="/github-blog/assets/css/0.styles.78aca58c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/github-blog/" class="home-link router-link-active"><!----> <span class="site-name">Blesstosam's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/github-blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/github-blog/blog/" class="nav-link router-link-active">Blog</a></div> <a href="https://github.com/blesstosam/github-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/github-blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/github-blog/blog/" class="nav-link router-link-active">Blog</a></div> <a href="https://github.com/blesstosam/github-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Blog</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/github-blog/blog/" class="sidebar-link">写在前面</a></li><li><a href="/github-blog/blog/async-catch.html" class="sidebar-link">优雅捕获 async 错误</a></li><li><a href="/github-blog/blog/block-chain.html" class="sidebar-link">区块链</a></li><li><a href="/github-blog/blog/business.html" class="sidebar-link">早期创业与技术关系不大</a></li><li><a href="/github-blog/blog/check-list.html" class="active sidebar-link">代码审查检查项</a></li><li><a href="/github-blog/blog/code-quality.html" class="sidebar-link">代码质量问题</a></li><li><a href="/github-blog/blog/codelife.html" class="sidebar-link">读codelife有感</a></li><li><a href="/github-blog/blog/front-end-rule.html" class="sidebar-link">前端代码规范</a></li><li><a href="/github-blog/blog/good-experience.html" class="sidebar-link">记录好的用户体验</a></li><li><a href="/github-blog/blog/mac-tips.html" class="sidebar-link">Mac Tips</a></li><li><a href="/github-blog/blog/taobao-ten-years.html" class="sidebar-link">读淘宝十年有感</a></li><li><a href="/github-blog/blog/vue-auth.html" class="sidebar-link">Vue权限系统</a></li><li><a href="/github-blog/blog/vue-i18n.html" class="sidebar-link">Vue-i18n 单独使用</a></li><li><a href="/github-blog/blog/vue-ts.html" class="sidebar-link">Vue+ts 实践</a></li><li><a href="/github-blog/blog/write-backend.html" class="sidebar-link">写后台总结</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="代码审查检查项"><a href="#代码审查检查项" aria-hidden="true" class="header-anchor">#</a> 代码审查检查项</h1> <h4 id="_1-结合-gitlab-做code-review，之前公司没有这种做法，但是-review-作为一种能发现很多bug（根据《代码大全》统计15-左右的bug在review阶段出现）的手段，review是代码生产上必不可少的一环，一定要做起来。"><a href="#_1-结合-gitlab-做code-review，之前公司没有这种做法，但是-review-作为一种能发现很多bug（根据《代码大全》统计15-左右的bug在review阶段出现）的手段，review是代码生产上必不可少的一环，一定要做起来。" aria-hidden="true" class="header-anchor">#</a> 1. 结合 gitlab 做code review，之前公司没有这种做法，但是 review 作为一种能发现很多bug（根据《代码大全》统计15%左右的bug在review阶段出现）的手段，review是代码生产上必不可少的一环，一定要做起来。</h4> <p>目前来看还是以我一个人review为主，后面慢慢走向互相review。互相review代码也是让团队每个人都能提高的一个手段。</p> <hr> <h4 id="_2-code-review-checklist"><a href="#_2-code-review-checklist" aria-hidden="true" class="header-anchor">#</a> 2. Code review checklist</h4> <ul><li>检查文件命名，文件夹和文件命名用横杠连接，vue组件用首字母驼峰法</li></ul> <div class="language- extra-class"><pre class="language-text"><code>/api-user/my-user.js
+/components/HelloWorld.vue
+</code></pre></div><ul><li>检查变量命名</li></ul> <blockquote><p>标准变量：驼峰法<br>
+常量：大写，单词中间用下划线<br>
+构造函数或类：首字母大写驼峰法<br>
+布尔值类型：以is/has/can/should等开头的驼峰法<br>
+类的成员：公有属性和方法同上，私有属性和方法在前面加下划线</p></blockquote> <ul><li>避免回调地狱</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// bad</span>
+<span class="token keyword">function</span> <span class="token function">submitForm</span><span class="token punctuation">(</span><span class="token parameter">values<span class="token punctuation">,</span> cb</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token function">validateForm</span><span class="token punctuation">(</span>values<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token function">cb</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">makeRequest</span><span class="token punctuation">(</span>values<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> resp</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">cb</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      <span class="token function">makeAnotherRequest</span><span class="token punctuation">(</span>resp<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> anotherResp</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> <span class="token function">cb</span><span class="token punctuation">(</span>err<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token function">cb</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token function">wrapResult</span><span class="token punctuation">(</span>anotherResp<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// good</span>
+<span class="token keyword">const</span> validateFormPromise <span class="token operator">=</span> <span class="token function">promisify</span><span class="token punctuation">(</span>validateForm<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> makeRequestPromise <span class="token operator">=</span> <span class="token function">promisify</span><span class="token punctuation">(</span>makeRequest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> makeAnotherRequestPromise <span class="token operator">=</span> <span class="token function">promisify</span><span class="token punctuation">(</span>makeAnotherRequest<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">submitForm</span><span class="token punctuation">(</span><span class="token parameter">values</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">try</span> <span class="token punctuation">{</span>
+    <span class="token keyword">await</span> <span class="token function">validateFormPromise</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> resp <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">makeRequestPromise</span><span class="token punctuation">(</span>values<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> anotherResp <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">makeAnotherRequestPromise</span><span class="token punctuation">(</span>resp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token function">wrapResult</span><span class="token punctuation">(</span>anotherResp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">throw</span> e<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>尽量先用return 避免过多if else 判断</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// bad</span>
+<span class="token keyword">function</span> <span class="token function">someFunction</span><span class="token punctuation">(</span><span class="token parameter">someCondition</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>someCondition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// Do Something</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// good</span>
+<span class="token keyword">function</span> <span class="token function">someFunction</span><span class="token punctuation">(</span><span class="token parameter">someCondition</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>someCondition<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// Do Something</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><ul><li>避免过多层三元表达式</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// bad</span>
+<span class="token keyword">const</span> <span class="token function-variable function">sampleComponent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>flag <span class="token operator">&amp;&amp;</span> flag2 <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>flag3
+        <span class="token operator">?</span> flag4
+        <span class="token operator">?</span> <span class="token string">'foo'</span>
+        <span class="token punctuation">:</span> flag5
+        <span class="token operator">?</span> <span class="token string">'foo1'</span>
+        <span class="token punctuation">:</span> <span class="token string">'foo2'</span>
+        <span class="token punctuation">:</span> <span class="token string">'foo3'</span>
+      <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token comment">// good</span>
+<span class="token keyword">const</span> <span class="token function-variable function">sampleComponent</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>flag <span class="token operator">&amp;&amp;</span> flag2 <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>flag3<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>flag4<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token string">'foo'</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>flag5<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token string">'foo1'</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token string">'foo2'</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">'foo3'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>如果是需要多语言支持的话，从一开始就加上i18n的翻译</li></ul> <div class="language-html extra-class"><pre class="language-html"><code>// bad
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>My Awesome Project<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Create like a god. Command like a king. Work like a slave.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+
+// good
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>$t('title')<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>$t('subTitle')<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li>避免使用全局css，比如 *选择器，或样式文件</li> <li>一些操作可能会导致程序挂掉的地方，必须使用try catch</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// bad</span>
+<span class="token keyword">const</span> resp <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>resp<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+
+<span class="token comment">// good</span>
+<span class="token keyword">const</span> resp <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">try</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> obj <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>resp<span class="token punctuation">.</span>data<span class="token punctuation">)</span>  
+<span class="token punctuation">}</span> <span class="token keyword">catch</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>过多的 if esle 用 switch 替代，代码更加易懂</li> <li>Dont repeat yourself, 碰到多处使用的代码一定要封装起来</li> <li>在写代码的过程中碰到不合理或者代码数量庞大的要重构</li></ul></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/blesstosam/github-blog/edit/master/docs/blog/check-list.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">9/13/2019, 8:21:52 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/github-blog/blog/business.html" class="prev">
+          早期创业与技术关系不大
+        </a></span> <span class="next"><a href="/github-blog/blog/code-quality.html">
+          代码质量问题
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/github-blog/assets/js/app.e3b10756.js" defer></script><script src="/github-blog/assets/js/2.1ab0c05b.js" defer></script><script src="/github-blog/assets/js/11.65bfad95.js" defer></script>
+  </body>
+</html>

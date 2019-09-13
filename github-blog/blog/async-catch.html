@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>优雅捕获 async 错误 | Blesstosam&#39;s blog</title>
+    <meta name="description" content="Blesstosam&#39;s blog">
+    <link rel="icon" href="/github-blog/favicon.ico">
+    
+    <link rel="preload" href="/github-blog/assets/css/0.styles.78aca58c.css" as="style"><link rel="preload" href="/github-blog/assets/js/app.e3b10756.js" as="script"><link rel="preload" href="/github-blog/assets/js/2.1ab0c05b.js" as="script"><link rel="preload" href="/github-blog/assets/js/8.55482e5e.js" as="script"><link rel="prefetch" href="/github-blog/assets/js/10.74514121.js"><link rel="prefetch" href="/github-blog/assets/js/11.65bfad95.js"><link rel="prefetch" href="/github-blog/assets/js/12.c45d2580.js"><link rel="prefetch" href="/github-blog/assets/js/13.da1d7953.js"><link rel="prefetch" href="/github-blog/assets/js/14.1e637a97.js"><link rel="prefetch" href="/github-blog/assets/js/15.91c4ebc1.js"><link rel="prefetch" href="/github-blog/assets/js/16.f8868b19.js"><link rel="prefetch" href="/github-blog/assets/js/17.92f17462.js"><link rel="prefetch" href="/github-blog/assets/js/18.79071b8a.js"><link rel="prefetch" href="/github-blog/assets/js/19.999d499a.js"><link rel="prefetch" href="/github-blog/assets/js/20.335406b8.js"><link rel="prefetch" href="/github-blog/assets/js/21.7e3b8cf1.js"><link rel="prefetch" href="/github-blog/assets/js/22.b1fff7ad.js"><link rel="prefetch" href="/github-blog/assets/js/23.ccb484b8.js"><link rel="prefetch" href="/github-blog/assets/js/3.55e0a87f.js"><link rel="prefetch" href="/github-blog/assets/js/4.0b322df0.js"><link rel="prefetch" href="/github-blog/assets/js/5.816dad81.js"><link rel="prefetch" href="/github-blog/assets/js/6.abd7a974.js"><link rel="prefetch" href="/github-blog/assets/js/7.cb32d52a.js"><link rel="prefetch" href="/github-blog/assets/js/9.fe6ce754.js">
+    <link rel="stylesheet" href="/github-blog/assets/css/0.styles.78aca58c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/github-blog/" class="home-link router-link-active"><!----> <span class="site-name">Blesstosam's blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/github-blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/github-blog/blog/" class="nav-link router-link-active">Blog</a></div> <a href="https://github.com/blesstosam/github-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/github-blog/" class="nav-link">首页</a></div><div class="nav-item"><a href="/github-blog/blog/" class="nav-link router-link-active">Blog</a></div> <a href="https://github.com/blesstosam/github-blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Blog</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/github-blog/blog/" class="sidebar-link">写在前面</a></li><li><a href="/github-blog/blog/async-catch.html" class="active sidebar-link">优雅捕获 async 错误</a></li><li><a href="/github-blog/blog/block-chain.html" class="sidebar-link">区块链</a></li><li><a href="/github-blog/blog/business.html" class="sidebar-link">早期创业与技术关系不大</a></li><li><a href="/github-blog/blog/check-list.html" class="sidebar-link">代码审查检查项</a></li><li><a href="/github-blog/blog/code-quality.html" class="sidebar-link">代码质量问题</a></li><li><a href="/github-blog/blog/codelife.html" class="sidebar-link">读codelife有感</a></li><li><a href="/github-blog/blog/front-end-rule.html" class="sidebar-link">前端代码规范</a></li><li><a href="/github-blog/blog/good-experience.html" class="sidebar-link">记录好的用户体验</a></li><li><a href="/github-blog/blog/mac-tips.html" class="sidebar-link">Mac Tips</a></li><li><a href="/github-blog/blog/taobao-ten-years.html" class="sidebar-link">读淘宝十年有感</a></li><li><a href="/github-blog/blog/vue-auth.html" class="sidebar-link">Vue权限系统</a></li><li><a href="/github-blog/blog/vue-i18n.html" class="sidebar-link">Vue-i18n 单独使用</a></li><li><a href="/github-blog/blog/vue-ts.html" class="sidebar-link">Vue+ts 实践</a></li><li><a href="/github-blog/blog/write-backend.html" class="sidebar-link">写后台总结</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="优雅捕获-async-错误"><a href="#优雅捕获-async-错误" aria-hidden="true" class="header-anchor">#</a> 优雅捕获 async 错误</h1> <div class="language- extra-class"><pre class="language-text"><code>async function foo() {
+    try {
+        let res = await asyncFunc()
+        try {
+            let res2 = await anyncFunc2()
+        } catch (e1) {
+            // ...
+        }
+    } catch (e2) {
+        // ...
+    }
+}
+</code></pre></div><p>上述函数如果有多层嵌套, 在try catch 里嵌套 try catch 会变的很难看，可读性也会下降（参考回调地域）</p> <p>如下，在网上发现的</p> <div class="language- extra-class"><pre class="language-text"><code>async function errorCaptured(asyncFunc) {
+    try {
+        let res = await asyncFunc()
+        return [null, res]
+    } catch (e) {
+        return [e, null]
+    }
+} 
+</code></pre></div><p>上述写法就可以变成以下写法</p> <div class="language- extra-class"><pre class="language-text"><code>async function foo() {
+    let [err, res] = await errorCaptured(asyncFunc)
+    if (err) {
+        // ...
+        return;
+    }
+    
+    let [err, res] = await errorCaptured(asyncFunc2)
+    if (err) {
+        // ...
+        return;
+    }
+}
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/blesstosam/github-blog/edit/master/docs/blog/async-catch.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">9/13/2019, 8:21:52 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/github-blog/blog/" class="prev router-link-active">
+          写在前面
+        </a></span> <span class="next"><a href="/github-blog/blog/block-chain.html">
+          区块链
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/github-blog/assets/js/app.e3b10756.js" defer></script><script src="/github-blog/assets/js/2.1ab0c05b.js" defer></script><script src="/github-blog/assets/js/8.55482e5e.js" defer></script>
+  </body>
+</html>
